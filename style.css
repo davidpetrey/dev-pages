@@ -1,0 +1,43 @@
+body {
+	padding-top: 50px;
+	background: #051536;
+		/#1d1f20;
+	color: #ddd;
+}
+.navbar-brand {font-size: 1.4em;}
+.navbar-nav {font-size: 1.2em;}
+
+.example{
+	margin-bottom: 90px;
+}
+
+.filler {
+	font-size: 100px;
+}
+
+#home {
+	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/202963/earth.jpg") no-repeat;
+	background-size: cover;
+}
+#home .container-fluid {
+	margin-bottom: 450px;
+}
+
+#portfolio {
+	background: #166637;
+
+}
+
+#cred {
+	margin-top: 150px;
+	padding: 40px;
+}
+#cred h1 {
+	font-size: 4em;
+}
+#cred h3 {
+	font-size: 2.5em;
+	
+}
+
+
