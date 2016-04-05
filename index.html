@@ -1,65 +1,155 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>David Petrey</title>
     <meta name="description" content="">
-    <meta name="author" content="">
-
-
-    <title>David Petrey | Web Dev</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-
-    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body id="top">
-    <!-- *** Home *** -->
-    <section id="home" >
-        <div class="container-fluid" >
-            <div  id="cred">
-                <h1 >David Petrey</h1>
-                <h3>Web Developer / JavaScript Enthusiast</h3>
+
+<body>
+    <header id="nav">
+        <div class="custom-wrapper pure-g" id="menu">
+            <div class="pure-u-1 pure-u-md-1-2">
+                <div class="pure-menu">
+                    <a href="#" id="header-name" class="pure-menu-heading custom-brand">David Petrey</a>
+                    <a href="#" class="custom-toggle" id="toggle">
+                        <s class="bar"></s>
+                        <s class="bar"></s>
+                    </a>
+                </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+                <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Portfolio</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="title-section">
+        <div class="title-container">
+            <div class="lr-border">
+                <h1>David Petrey
+                    <br> web developer
+                </h1>
+            </div>
+            <div class="tb-border">
+            </div>
+        </div>
+        <div class="intro">
+            <div class="container">
+                Hi, I'm Dave.
+                <br>I first started learning Web Design about 10 years ago in college.
+                <br>Last year I decided it was time to continue on the path to becoming a Web Developer.
+                <br>Here is what I've learned so far...
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container-fluid">
-            <div id="cred">
-                <div>davidpetrey@yahoo.com</div>
-                <div><a href="https://www.linkedin.com/in/davidpetrey">Linkedin</a></div>
-                <div><a href="https://github.com/davidpetrey">GitHub</a></div>
-                <div><a href="http://freecodecamp.com/davidpetrey">Free Code Camp</a></div>
-                <div id="copy">Copyright &copy; 2016 David Petrey</div>
+
+    <section id="about-section">
+        <div class="container-full clear">
+            <div class="clear text-center">
+                <h2>Technologies and Programming Languages</h2>
+                <div class="about col-3">
+                    <img src="img/html5.gif">
+                    <br> HTML5
+                </div>
+                <div class="about col-3">
+                    <img src="img/css3.gif">
+                    <br>CSS3
+                </div>
+                <div class="about col-3">
+                    <img src="img/js.gif">
+                    <br>JavaScript
+                </div>
+                <div class="about col-3">
+                    <img src="img/jquery.gif">
+                    <br>jQuery
+                </div>
             </div>
+            <div class="clear text-center">
+                <div id="ps" class="about col-4">
+                    <img src="img/ps.gif">
+                    <br><span>Photoshop</span>
+                </div>
+                <div class="about col-4">
+                    <img src="img/ai.gif">
+                    <br>Illustrator
+                </div>
+                <div id="gh" class="about col-4">
+                    <img src="img/github.gif">
+                    <br><span>GitHub</span>
+                </div>
+            </div>
+
+
+            <div class="clear about-list col-4 push-1">
+                <h3>I also know...</h3>
+
+                <ul>
+                    <li>WordPress</li>
+                    <li>Bootstrap</li>
+                    <li>Base (css framework)</li>
+                </ul>
+                <h3>and I'm also familiar with...</h3>
+                <ul>
+                    <li>Node.js</li>
+                    <li>React.js</li>
+                    <li>Base (css framework)</li>
+                </ul>
+            </div>
+
+            <div id="about-cert" class="clear right col-6">
+                <h3>I also earned this...</h3>
+                <div class="left">
+                    <img src="img/certificate.jpg">
+                    <a href="http://www.freecodecamp.com/davidpetrey/front-end-certification" target="_blank">Link to official copy</a>
+                </div>
+                <div class="left">
+                    <p>This certificate represents over 400 hours of work at
+                        <a href="http://freecodecamp.com" target="_blank">FreeCodeCamp</a></p>
+                </div>
+
+
+
+
+
+            </div>
+
+
         </div>
     </section>
 
+    <footer>
+        <section>
+            <div class="container">
+                Copyright 2016 David Petrey
+            </div>
+        </section>
+    </footer>
 
 
-    <!-- Bootstrap core JavaScript
-================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-    <script>
-        window.jQuery || document.write('<script src="https://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')
-        </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-        </body>
+
+
+
+
+
+    <script src="js/vendor/jquery-1.12.2.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/default.js"></script>
+</body>
+
+</html>
