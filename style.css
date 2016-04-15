@@ -14,18 +14,18 @@ header a:hover {color: #00B9FF;}
 
 
 /* 				TITLE SECTION */
-.title-section{padding-top: 50px; background: #253E5F; background: url(img/road-bg.jpg); background-size:cover; background-position:bottom;}
+.title-section{padding-top: 20px; background: #253E5F; background: url(img/road-bg.jpg); background-size:cover; background-position:bottom;}
 
 
 /*.title-section .intro {background:rgba(100,100,100,.1);}*/
-.title-section .container {padding:20px 250px 40px 250px; text-align: center;  }
+.title-section .container {  padding: 20px 8% 40px 8%; text-align: center;  }
 .title-section .intro {}
 
 .title-container {
 	//background: rgba(255,255,255,.1);
 	position: relative;
-	height: 340px;
-	max-width: 660px;
+	height: 200px;
+	/**/max-width: 480px;
 	margin: 0 auto;
 	color:#fff;
 
@@ -33,24 +33,24 @@ header a:hover {color: #00B9FF;}
 
 .lr-border {
 	text-align: center;
-
-	padding-top: 28px;
 	box-sizing: border-box;
 	border-left: 1px solid;
 	border-right: 1px solid;
 	position: absolute;
 	width: calc(100% - 40px);
-	height: 220px;
-	top: 60px;
 	left: 20px;
+	/**/padding-top: 14px;
+	/**/height: 120px;
+	/**/top: 40px;
+
 }
 
 .lr-border h1 {
+	/**/font-size: 36px;
 	margin:0;
-	font-size: 62px;
 	font-family: Merriweather;
 	line-height:initial;
-	 text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+	text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 
 }
 
@@ -60,7 +60,7 @@ header a:hover {color: #00B9FF;}
 	border-bottom:1px solid;
 	position: absolute;
 	width: calc(100% - 100px);
-	height:300px;
+	/**/height:160px;
 	left: 50px;
 	top:20px;
 }
@@ -71,19 +71,19 @@ header a:hover {color: #00B9FF;}
 
 /* 				ABOUT SECTION	 */
 #about-section {background:#4A5056; padding-bottom:40px;} /* bg #555  #7F1C1C*/
-#about-section h1 {margin-top:0; margin-bottom:1em;}
-#about-section > div > div {padding-top:30px; }
-/*#about-section > div > div div {border: 1px solid;}*/
+#about-section h1 {font-size:28px; margin-top:1em; margin-bottom:1em;}
+#badges-top > div, #badges-bottom > div {padding-top:15px; }
+
 /*.about {min-height: 100px;}*/
 /*#about-section .container {padding:0 1%;}*/
-#about-section img {height:100px;}
-#ps {text-align: right; padding-right:50px;}
-#ps span {padding-right: 17px}
-#gh {text-align: left; padding-left:50px;}
-#gh span {padding-left: 26px}
-#about-cert img {height:250px;display:block;}
+#badges-top img, #badges-bottom img {height:100px;}
+
+#about-cert img {}
 #about-cert p {margin:0;}
-#about-cert div:nth-child(3) {width: 30px; margin-left: 5px;}
+#about-cert h3 {margin-top: 0} 
+#about-cert div:nth-child(2){max-width: 70%; }
+#about-cert div:nth-child(2) a {font-size:12px; margin-top:-8px ;display:block;}
+#about-cert div:nth-child(3){ }
 
 
 /* 				PORTFOLIO SECTION	 */
@@ -97,8 +97,70 @@ header a:hover {color: #00B9FF;}
 
 .port > div div a span{}
 .port > div div a:hover img {}
-
+.port span {display:block;}
 
 
 footer {background:#000;}
 footer .container {padding:20px 0;text-align:right;}
+
+
+/*               tablet */
+@media only screen and (min-width: 740px) {
+  .title-section{padding-top: 50px;}
+
+	.title-container { max-width: 540px; height: 300px;}
+	.lr-border { padding-top: 22px; height: 180px;  top: 55px; }
+	.lr-border h1 { font-size: 52px; }
+	.tb-border { height: 250px; }
+
+	.title-section .container {   padding: 20px 100px 40px 100px; }
+
+	#about-section #badges-bottom {padding-top:30px; }
+  #about-section h1 {font-size:32px;}
+
+  #about-cert img {
+    height: 250px;
+    display: block;
+  }
+ 
+#about-cert div:nth-child(3) {width: 30px; margin-left: 5px;}
+#about-cert div:nth-child(2) a {font-size:16px; margin-top:0 ;}
+
+
+
+}
+/** RESPONSIVE STYLES **/
+/*             desktop */
+@media only screen and (min-width: 980px) {
+
+.title-container { max-width: 660px; height: 340px;}
+.lr-border { padding-top: 28px; height: 220px; }
+.lr-border h1 { font-size: 62px; }
+.tb-border { height: 300px; }
+
+.title-section .container {  padding: 20px 175px 40px 175px; }
+
+
+#ps {text-align: right; padding-right:50px;}
+#ps span {padding-right: 17px}
+#gh {text-align: left; padding-left:50px;}
+#gh span {padding-left: 26px}
+
+
+#about-cert h3 {margin-top: 1em} 
+
+
+}
+
+/*                hd */
+@media only screen and (min-width: 1140px) {
+
+
+
+
+
+.title-section .container {padding:20px 250px 40px 250px;  }
+
+}
+
+
